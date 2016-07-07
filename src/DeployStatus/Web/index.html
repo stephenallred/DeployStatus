@@ -38,7 +38,7 @@
                     data-bind="text: ShowDisabledEnvironments.DisplayName, css: { active: ShowDisabledEnvironments.Active() !== true }, click: ShowDisabledEnvironments.Toggle"></button>
         </div>
         <span data-bind="text: Name"></span>        
-        <div class="sub header">Last server update: <span data-bind="dateString: LastUpdated, datePattern: 'MMMM Do YYYY, H:mm:ss a'"></span></div>
+        <div class="sub header">Last server update: <span data-bind="dateString: LastUpdated, datePattern: 'LLL'"></span></div>
     </h1>
     
 </div>
@@ -78,7 +78,7 @@
                     </a>
                     <div class="content">
                         <a target="_blank" data-bind="text: Version, attr: { href: OctopusDeployLink }"></a>
-                        <div class="sub header" data-bind="dateString: Started, datePattern: 'MMMM Do YYYY'"></div>
+                        <div class="sub header" data-bind="dateString: Started, datePattern: 'LL'"></div>
                     </div>
                 </div>
             </div>
